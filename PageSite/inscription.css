@@ -1,0 +1,23 @@
+html{
+	background-color: #DCDCDC;
+	font-family: Arial Narrow;
+}
+
+h1{
+	color: grey;
+	text-decoration: underline;
+}
+
+p{
+	font-size: 15px;
+	font-style: italic;
+}
+
+#renseignement{
+	color: grey;
+	text-decoration: underline;
+}
+
+h2{
+	margin-left: 90%;
+}
