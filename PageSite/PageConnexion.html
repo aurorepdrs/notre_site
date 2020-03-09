@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-      <meta charset="UTF-8">
-    <title>Connexion</title>
-	<link rel="stylesheet" href=
-"inscription.css" type="text/css"
-media="screen" />
-  </head>
-  <body>
-  <h2> <a href="PageAccueil.html"> Accueil </a> </h2>
-  <form method="post" action="traitement.php">
+
+<head>
+
+	<meta charset="UTF-8">
+   <title>Connexion</title>
+	<link rel="stylesheet" href="inscription.css" type="text/css" media="screen" />
+
+</head>
+  
+<body>
+
+	<h2> <a href="PageAccueil.html"> Accueil</a> </h2>
+
+	<div id="connexion">  
+  	<form method="post" action="traitement.php">
        
-      <center>
-      <p >
-          Identifiant :<br/>
-      
-      <input type="text" name="Identifiant" placeholder="Ex: dubois.philippe" /><br/></p>
-          <p>Mot de passe :<br/>
-      <input type="passeword" name="Mdp" placeholder="Ex: Licorne34110" /><br/></p>
-      <form action="#">
-    <button type="button">Connexion</button><br/>
-     <p>Mot de passe oublié ?<br/>
-         Nouveau utilisateur<br/>
-          </p>
+  	<p> Identifiant : <br/>
+  	<input type="text" name="Identifiant" placeholder="Ex: dubois.philippe" /> <br/> </p>
+  	<p>Mot de passe : <br/>
+  	<input type="passeword" name="Mdp" placeholder="Ex: licorne34110" /> <br/> </p>
+  
+  	<form action="#">
+  
+  	<button type="button">Connexion</button> <br/>
+  
+  	<p>Mot de passe oublié ? <br/>
+  	<a href= "MotDePasse.html">Cliquez ici</a> <br/> </p>
           
-          <a href= "PageInscription.html">S'inscrire</a><br/>
+  	<a href= "PageInscription.html">S'inscrire</a><br/>
           
-     
-      
-      </form>
+  	</form>
+  
+  	</form>
 
-    </center>
+	</div>
+	
+</body>
 
-      </form>
-  </body>
 </html>
