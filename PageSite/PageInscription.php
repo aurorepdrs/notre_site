@@ -31,7 +31,7 @@
 
 	<p> Nom : <input type="text" name="n" value=""/> </p>
 	<p> Prénom : <input type="text" name="p" value=""/> </p>
-	<p> Numéro de téléphone : <input type="num" name="tel" value=""/> </p>
+	<p> Numéro de téléphone : <input type="number" name="tel" value=""/> </p>
 	<p> Email : <input type="text" name="mail" value=""/> </p>
 	<p> Mot de passe : <input type="password" name="mdp1" value=""/> </p>
 	<p> Confirmation du mot de passe : <input type="password" name="mdp2" value=""/> </p>
