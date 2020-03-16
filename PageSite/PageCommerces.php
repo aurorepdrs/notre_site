@@ -1,6 +1,6 @@
 <?php
 // on se connecte à notre base
- $bdd = new PDO('mysql:host=localhost;dbname=COMMERCES;', 'root', 'root');
+ $bdd = new PDO('mysql:host=localhost;dbname=projetS6;', 'root', 'root');
 
 ?>
 		
