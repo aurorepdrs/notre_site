@@ -32,7 +32,7 @@
 		$sql = "INSERT INTO utilisateur(nom, prenom, tel, email, motdepasse, sexe, num_voie, nom_voie, complement_adr, code_postal) VALUES ('$n', '$p', '$num', '$mail', '$mdp1', '$genre', '$voie', '$adr', '$cadr', '$cp')";
 
 
-		$bdd = new PDO('mysql:host=localhost:3306;dbname=Projets6', 'root', 'root');
+		$bdd = new PDO('mysql:host=localhost:8888;dbname=Projets6', 'root', 'root');
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$statement = $bdd->prepare($sql);
 		$statement->execute();
