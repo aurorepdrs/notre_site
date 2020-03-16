@@ -45,7 +45,7 @@
 	<p>Femme : <input type="radio" name="genre" value="F"> </p> <br>
 
 	<br>
-	<p> Numéro de voie : <input type="text" name="voie" value=""/> </p>
+	<p> Numéro de voie : <input type="number" name="voie" value=""/> </p>
 	<p> Nom de la rue: <input type="text" name="adr" value=""/> </p>
 	<p> Complément d'adresse : <input type="text" name="cadr" value=""/> </p>
 	<p> Code postal : <input type="number" name="cp" value=""/> </p>
