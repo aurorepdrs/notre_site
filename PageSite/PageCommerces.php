@@ -8,7 +8,7 @@
 <head>
 	<link rel="stylesheet" href="Commerces.css" type="text/css"
 media="screen" />
-	<title>Commerces page php</title>
+	<title>Commerces</title>
 
 </head>
 <body>
