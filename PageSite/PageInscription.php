@@ -31,7 +31,7 @@
 
 	<p> Nom : <input type="text" name="n" value=""/> </p>
 	<p> Prénom : <input type="text" name="p" value=""/> </p>
-	<p> Numéro de téléphone : <input type="number" name="tel" value=""/> </p>
+	<p> Numéro de téléphone : <input type="number" name="num" value=""/> </p>
 	<p> Email : <input type="text" name="mail" value=""/> </p>
 	<p> Mot de passe : <input type="password" name="mdp1" value=""/> </p>
 	<p> Confirmation du mot de passe : <input type="password" name="mdp2" value=""/> </p>
@@ -47,8 +47,8 @@
 	<br>
 	<p> Numéro de voie : <input type="text" name="voie" value=""/> </p>
 	<p> Nom de la rue: <input type="text" name="adr" value=""/> </p>
-	<p> Complément d'adresse : <input type="num" name="cadr" value=""/> </p>
-	<p> Code postal : <input type="text" name="cp" value=""/> </p>
+	<p> Complément d'adresse : <input type="text" name="cadr" value=""/> </p>
+	<p> Code postal : <input type="number" name="cp" value=""/> </p>
 
 	</td>
 	</tr>
