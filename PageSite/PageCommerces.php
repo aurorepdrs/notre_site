@@ -12,7 +12,7 @@ media="screen" />
 
 </head>
 <body>
-
+<h2><a href="PageAccueil.php" >Accueil</a></h2>
 	<div class="recherche_p">
 
 		<form action="/search" id="searchthis" method="get">
