@@ -95,7 +95,7 @@
 	}
 	else {
 		enregistrer($_GET['n'],$_GET['num'],$_GET['mail'],$_GET['mdp1'],$_GET['genre'],$_GET['voie'], $_GET['adr'], $_GET['cadr'], $_GET['cp']);
-		echo "<meta http-equiv='refresh'content='30;URL=PageAccueil.php'>";
+		echo "<meta http-equiv='refresh'content='0;URL=PageAccueil.php'>";
 	}
 	
 
