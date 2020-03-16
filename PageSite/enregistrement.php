@@ -94,8 +94,8 @@
 		echo "<meta http-equiv='refresh'content='2;URL=PageInscription.php'>";
 	}
 	else {
-		enregistrer($_GET['n'],$_GET['num'],$_GET['mail'],$_GET['mdp1'],$_GET['genre'],$_GET['voie'], $_GET['adr'], $_GET['cadr'], $_GET['cp']);
-		echo "<meta http-equiv='refresh'content='0;URL=PageAccueil.php'>";
+		enregistrer($_GET['n'],$_GET['p'],$_GET['num'],$_GET['mail'],$_GET['mdp1'],$_GET['genre'],$_GET['voie'], $_GET['adr'], $_GET['cadr'], $_GET['cp']);
+		echo "<meta http-equiv='refresh'content='2;URL=PageAccueil.php'>";
 	}
 	
 
