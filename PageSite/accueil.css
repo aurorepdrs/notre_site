@@ -1,6 +1,3 @@
-
-
-
 body{
 	margin-top:50px;
 	margin-left:0px;
@@ -9,39 +6,46 @@ body{
 }
 
 
-.bandeau{ 
-	
-	left: 0 ;
-	width: 1450px ;
-	height: 250px ;
-	background-image: url("Images/accueil1.jpg") ;
-	opacity: 0.7;
-	margin-top: 0;
+.menu{ 
+    overflow: hidden;
+    display: inline-block;
+    padding-left: 300px;
+    margin-top: 20px;
 }
 
 
-.lien{
-	color:black;
-	font-weight: bold;
-
+.menu li{
+    
+    background-color: #f0f0f0;
+    border-right: 1px solid ;
+    position:relative;
+    float: left;
+    list-style-type: none;
 }
 
 
-#theme{	
-	text-align: center;
-	font-size: 30px;
-	margin-top:50px;
-	border-right:1px solid black;
-	border-top: 1px solid black;
-	border-left: 1px solid black;
-	border-bottom: 1px solid black;
-
+.menu li a{
+    color: #5d5d5d;
+    display: inline-block;
+    font: 20px  Lobster,Arial,sans-serif;
+    padding: 12px 35px 14px;
+    position: relative;
+    text-shadow: 1px 1px 0 ;
+    z-index:2;
+    text-decoration:none;
+    white-space:nowrap;
 }
+
+#logo{
+    width: 20%;
+    top:0px;
+    margin-left:40%;
+}
+
 
 
 
 .images{
 	float:right;
 }
-
 

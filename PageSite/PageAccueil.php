@@ -7,24 +7,33 @@ session_start();
 <html>
 
   <head>
-  	<link rel="stylesheet" href="accueil.css" type="text/css" />
-	<meta charset="UTF-8">
+    <link rel="stylesheet" href="accueil.css" type="text/css" />
+  <meta charset="UTF-8"/>
     <title>Accueil</title>
   </head>
   
 <body>
 
+  <header>
+            <h1> <img id="logo" src="logo.png"></h1>
+            
+        </header>
 
-<center> <div class="bandeau" >
-	
+<nav>
+           
+            <ul class="menu">
+                <li id="home"><a href="#home" class="homeIcon">Accueil</a></li>
+                <li id="news"><a href="#news">S'inscrire</a></li>
+                <li id="about"><a href="#about">Se connecter</a></li>
+                <li id="services"><a href="#services">Contact</a></li>
+                
+            </ul>
 
-		<a class="lien" href="PageInscription.php">| INSCRIPTION ||</a>
-		<a class="lien" href="PageConnexion.php"> SE CONNECTER ||</a>
-		<a class="lien" href="PageContact.php"> NOUS CONTACTER |</a>
+        </nav>
 
-  </center> 
-  </div>
-	
+
+  
+  
 
 
 
