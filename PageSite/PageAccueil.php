@@ -22,10 +22,10 @@ session_start();
 <nav>
            
             <ul class="menu">
-                <li id="home"><a href="#home" class="homeIcon">Accueil</a></li>
-                <li id="news"><a href="#news">S'inscrire</a></li>
-                <li id="about"><a href="#about">Se connecter</a></li>
-                <li id="services"><a href="#services">Contact</a></li>
+                <li id="home"><a href="PageAccueil.php" class="homeIcon">Accueil</a></li>
+                <li id="news"><a href="PageInscription.php">S'inscrire</a></li>
+                <li id="about"><a href="PageConnexion.php">Se connecter</a></li>
+                <li id="services"><a href="PageContact.php">Contact</a></li>
                 
             </ul>
 
@@ -37,8 +37,6 @@ session_start();
 
 
 
-
-<p id=theme> Quelles sont vos préférences ?</p>
 <?php
 $estconnecte=$_SESSION['utilisateurconnecte'];
 echo $estconnecte."<br>";
@@ -50,8 +48,8 @@ echo $estconnecte."<br>";
 
 <a class="images" href="PageCommerces.php"> <img src="Images/commerces.jpg" width="300px"  border="3" style="border-color: black;" > </a> <br>
 <a class="images" href="PageEtablissementsScolaires.php"> <img src="Images/enseignement.jpg" width="300px" border="3" style="border-color: black;" > </a> <br>
-<a class="images" href="PageLoisirs.php"> <img src="Images/loisirs.jpg" width="300px" border="3" style="border-color: black;" > </a> <br>
-<a class="images" href="PageQuartiers.php"> <img src="Images/quartiers.jpg" width="300px" border="3" style="border-color: black;" > </a> <br>
+<a  class="images" href="PageLoisirs.php"> <img src="Images/loisirs.jpg" width="300px" border="3" style="border-color: black;" > </a> <br>
+<a  class="images" href="PageQuartiers.php"> <img src="Images/quartiers.jpg" width="300px" border="3" style="border-color: black;" > </a> <br>
 
 
 

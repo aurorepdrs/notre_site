@@ -1,15 +1,19 @@
-body{
-	margin-top:50px;
-	margin-left:0px;
-
-	
+html{
+    background-image: url(MontpellierInscription.jpg);
 }
 
+
+
+#logo{
+    width: 20%;
+    top:0px;
+    margin-left:40%;
+}
 
 .menu{ 
     overflow: hidden;
     display: inline-block;
-    padding-left: 300px;
+    padding-left: 400px;
     margin-top: 20px;
 }
 
@@ -24,6 +28,7 @@ body{
 }
 
 
+
 .menu li a{
     color: #5d5d5d;
     display: inline-block;
@@ -36,16 +41,16 @@ body{
     white-space:nowrap;
 }
 
-#logo{
-    width: 20%;
-    top:0px;
-    margin-left:40%;
+
+.images{
+    float:right;
 }
 
 
+body{
+    margin-top:50px;
+    margin-left:0px;
 
-
-.images{
-	float:right;
+    
 }
 

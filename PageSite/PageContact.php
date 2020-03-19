@@ -18,17 +18,22 @@
 
 <body>
 
-<center> <div class="bandeau" >
-	
+<header>
+            <h1> <img id="logo" src="logo.png"></h1>
+            
+        </header>
 
-		<a class="lien" href="PageInscription.php">| INSCRIPTION ||</a>
-		<a class="lien" href="PageConnexion.php"> SE CONNECTER ||</a>
-		<a class="lien" href="PageContact.php"> NOUS CONTACTER |</a>
+<nav>
+           
+            <ul class="menu">
+                <li ><a href="PageAccueil.php" class="homeIcon">Accueil</a></li>
+                <li ><a href="PageInscription.php">S'inscrire</a></li>
+                <li ><a href="PageConnexion.php">Se connecter</a></li>
+                <li ><a href="PageContact.php">Contact</a></li>
+                
+            </ul>
 
-  </center> 
-  </div>
-	<h2><a href="PageAccueil.php" >Accueil</a></h2>
-
+        </nav>
 	<img src="Images/licence.png">
 	
 	<p> Nous sommes 4 &eacutetudiantes d'une troisième année de licence MIASHS:  </p>
