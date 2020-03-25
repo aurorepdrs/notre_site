@@ -148,12 +148,13 @@ echo $estconnecte."<br>";
 ?>
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46221.28181651607!2d3.8391420883842122!3d43.61007875192444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756742894e802!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1584966116617!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="padding-right: 500px; padding-top:600px;"   aria-hidden="false" tabindex="0"></iframe>
+<div id="carteaccueil">
+<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46221.28181651607!2d3.8391420883842122!3d43.61007875192444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756742894e802!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1584966116617!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="padding-left: 500px; padding-top:100px;"   aria-hidden="false" tabindex="0"></iframe>
+
+</div>
 
 
-
-
-
+<p id="bas">Site Francais <img  width="20" src="../drapeau.png"/> </p>
 
 
 
