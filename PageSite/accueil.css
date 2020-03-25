@@ -72,5 +72,25 @@ body{
     opacity: 0,5;
     margin-left:250px;
     margin-right:250px;
+    margin-top: 15px;
 
 }
+#carteaccueil{
+        margin-bottom: 30px;
+              
+              }
+
+#bas{
+    border: 2px solid black;
+    text-align: center;
+    padding-right:600px;
+    padding-left: 700px;
+    margin-top: 30px;
+    color:white;
+    background-color: black;
+
+    ;
+}
+
+
+
