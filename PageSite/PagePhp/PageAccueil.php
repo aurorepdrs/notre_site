@@ -7,7 +7,7 @@ session_start();
 <html>
 
   <head>
-    <link rel="stylesheet" href="accueil.css" type="text/css" />
+    <link rel="stylesheet" href="../accueil.css" type="text/css" />
   <meta charset="UTF-8"/>
     <title>Accueil</title>
   </head>
@@ -15,7 +15,7 @@ session_start();
 <body>
 
   <header>
-            <h1> <img id="logo" src="logo.png"></h1>
+            <h1> <img id="logo" src="../logo.png"></h1>
             
         </header>
 
