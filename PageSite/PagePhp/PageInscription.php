@@ -6,7 +6,7 @@
 
 	<meta charset="utf-8" />
 	<title>Inscription</title>
-	<link rel="stylesheet" href="inscription.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../inscription.css" type="text/css" media="screen" />
 
 	<style>
  		#trait{
