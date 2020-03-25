@@ -7,7 +7,7 @@
 
 	<title> Contact </title>
       <meta charset="UTF-8">
-	<link rel="stylesheet" href="accueil.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../accueil.css" type="text/css" media="screen" />
 	<style>
 		h2{
 			margin-left: 90%;
@@ -19,7 +19,7 @@
 <body>
 
 <header>
-            <h1> <img id="logo" src="logo.png"></h1>
+            <h1> <img id="logo" src="../logo.png"></h1>
             
         </header>
 
@@ -34,7 +34,7 @@
             </ul>
 
         </nav>
-	<img src="Images/licence.png">
+	<img src="../Images/licence.png">
 	
 	<p> Nous sommes 4 &eacutetudiantes d'une troisième année de licence MIASHS:  </p>
 	<li> Théa MARTINEZ </li>
