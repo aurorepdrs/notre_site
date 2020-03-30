@@ -51,7 +51,23 @@ h2{
 
 .images{
     float:right;
-  
+	display: inline-block;
+	position: relative;
+	margin:0;
+}
+
+.container .text{
+	background: rgba(0,0,0,0.6);
+	z-index: 0.5;
+	position: absolute;
+	text-align: center;
+	font-family: Georgia;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 60%;
+	color: white;
+	width: 50%;
 }
 
 
@@ -91,6 +107,4 @@ body{
 
     ;
 }
-
-
 
