@@ -38,8 +38,9 @@ session_start();
 
 <div class="filtre">
 
-<h2>Trouvez le quartier de Montpellier qui correspondra parfaitement a vos attentes.</h2> 
+<h2>Trouvez le quartier de Montpellier qui correspondra parfaitement à vos attentes.</h2> 
 
+<form action="recuperation.php" method="get" >
 <SELECT name="loisirs" >
 <OPTION VALUE="loisirs">LOISIRS </OPTION>
 <OPTION VALUE="Piscine">Piscine</OPTION>
@@ -52,17 +53,15 @@ session_start();
 <OPTION VALUE="Gymnase">Gymnases</OPTION> 
 <OPTION VALUE="Port">Port</OPTION>
 <OPTION VALUE="Randonnee">Randonnées</OPTION> 
-<OPTION VALUE="Cinémas">Cinémas</OPTION>
-<OPTION VALUE="Boulodromes">Boulodromes</OPTION> 
-<OPTION VALUE="Musees">Musées</OPTION>
+<OPTION VALUE="Cinema">Cinémas</OPTION>
+<OPTION VALUE="Boulodrome">Boulodromes</OPTION> 
+<OPTION VALUE="Musee">Musées</OPTION>
 <OPTION VALUE="Conservatoire">Conservatoires</OPTION> 
-<OPTION VALUE="Theatre">Theâtres</OPTION>
-<OPTION VALUE="Salles_combat">Salles de combat</OPTION> 
+<OPTION VALUE="Theatre">Theâtres</OPTION> 
 <OPTION VALUE="Tennis">Terrains de tennis</OPTION>
 <OPTION VALUE="Cyclisme">Cyclisme</OPTION> 
-<OPTION VALUE="Domaine_skiable">Domaines skiable</OPTION>
-<OPTION VALUE="Salles_combat">Salles de combat</OPTION> 
-<OPTION VALUE="Centre_equestre">Centres équestre</OPTION>
+<OPTION VALUE="Domaine_skiable">Domaines skiables</OPTION>
+<OPTION VALUE="Centre_equestre">Centres équestres</OPTION>
 <OPTION VALUE="Salles_combat">Salles de combat</OPTION> 
 <OPTION VALUE="Athletisme">Athlétimse</OPTION>
 <OPTION VALUE="Terrain_golf">Terrains de golf</OPTION> 
@@ -136,9 +135,20 @@ session_start();
 
 <p style="padding-left: 250px"> <input type="submit" value="RECHERCHER"> </p> 
 
+
+</form>
 </div>
 
 
+<div class='container'>
+<a class="images" href="Centre.php"> <img src="../Images/centre.jpg" width="300px"  border="3" style="border-color: black;" ><div class="text"><h3>Centre</h3></div> </a> <br>
+<a class="images" href="HopitauxFaculte.php"> <img src="../Images/hopitauxfacultes.jpg" width="300px" border="3" style="border-color: black;" ><div class="text"><h3>Hopitaux Facultés</h3></div></a> <br>
+<a  class="images" href="PortMarianne.php"> <img src="../Images/portmarianne.jpg" width="300px" border="3" style="border-color: black;" ><div class="text"><h3>Port Marianne</h3></div></a> <br>
+<a  class="images" href="PresDarenes.php"> <img src="../Images/presdarenes.jpg" width="300px" border="3" style="border-color: black;" ><div class="text"><h3>Près d'anènes</h3></div> </a> <br>
+<a  class="images" href="CroixDargent.php"> <img src="../Images/croixdargent.jpg" width="300px" border="3" style="border-color: black;" ><div class="text"><h3>Croix d'argent</h3></div> </a> <br>
+<a  class="images" href="Mosson.php"> <img src="../Images/mosson.jpg" width="300px" border="3" style="border-color: black;" ><div class="text"><h3>Mosson</h3></div> </a> <br>
+<a  class="images" href="Cevennes.php"> <img src="../Images/cevennes.jpg" width="300px" border="3" style="border-color: black;" ><div class="text"><h3>Cevennes</h3></div> </a> <br>
+</div>
 
 
 
