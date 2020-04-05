@@ -43,7 +43,7 @@ session_start();
 
 <form action="recuperation.php" method="get" >
 <SELECT name="loisirs" >
-<OPTION VALUE="loisirs">LOISIRS </OPTION>
+<OPTION VALUE="">LOISIRS </OPTION>
 <OPTION VALUE="Piscine">Piscine</OPTION>
 <OPTION VALUE="Plateaux_sportifs">Plateaux Sportifs</OPTION> 
 <OPTION VALUE="Terrains_jeux">Terrains de jeux</OPTION> 
@@ -72,7 +72,7 @@ session_start();
 
 
 <SELECT name="commerces" >
-<OPTION VALUE="commerces">COMMERCES </OPTION>
+<OPTION VALUE="">COMMERCES </OPTION>
 <OPTION VALUE="Hypermarche">Hypermarché</OPTION>
 <OPTION VALUE="Librairie">Librairie</OPTION>
 <OPTION VALUE="Magasin_vetements">Magasin de vêtements</OPTION>
@@ -100,8 +100,8 @@ session_start();
 </SELECT>
 
 
-<SELECT name="etablissement scolaire" >
-<OPTION VALUE="etablissement_scolaire">ETABLISSEMENTS SCOLAIRES </OPTION>
+<SELECT name="etablissementscolaire" >
+<OPTION VALUE="">ETABLISSEMENTS SCOLAIRES </OPTION>
 <OPTION VALUE="Ecole_maternelle">Ecole maternelle</OPTION>
 <OPTION VALUE="Ecole_maternelle_cantine">Ecole maternelle (cantine)</OPTION>
 <OPTION VALUE="Lycee_professionnel">Lycée professionnel</OPTION>
