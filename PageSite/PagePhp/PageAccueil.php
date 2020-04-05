@@ -23,7 +23,7 @@ session_start();
            
             <ul class="menu">
                 <li id="home"><a href="PageAccueil.php" class="homeIcon">Accueil</a></li>
-               <li> <a href="../PagePhp/PageQuartiers/Centre.php"> Quartiers </a> </li>
+               
 			   <li id="news"><a href="PageInscription.php">S'inscrire</a></li>
                 <li id="about"><a href="PageConnexion.php">Se connecter</a></li>
                 <li id="services"><a href="PageContact.php">Contact</a></li>
@@ -146,26 +146,26 @@ session_start();
 <br>
 <table align=center>
   <td>
-<a class="images" href="Centre.php"> <img src="../Images/centre.jpg" width="300px" height="150px"  border="3" style="border-color: black;" ><div class="text"><h3>Centre</h3></div> </a> <br> </td>
+<a class="images" href="PageQuartiers/Centre.php"> <img src="../Images/centre.jpg" width="300px" height="150px"  border="3" style="border-color: black;" ><div class="text"><h3>Centre</h3></div> </a> <br> </td>
 <td>
-<a class="images" href="HopitauxFaculte.php"> <img src="../Images/hopitauxfacultes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Hopitaux Facultés</h3></div></a> <br>
+<a class="images" href="PageQuartiers/HopitauxFaculte.php"> <img src="../Images/hopitauxfacultes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Hopitaux Facultés</h3></div></a> <br>
 </td>
 <td>
-<a  class="images" href="PortMarianne.php"> <img src="../Images/portmarianne.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Port Marianne</h3></div></a> <br>
+<a  class="images" href="PageQuartiers/PortMarianne.php"> <img src="../Images/portmarianne.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Port Marianne</h3></div></a> <br>
 </td>
 <td>
-<a  class="images" href="PresDarenes.php"> <img src="../Images/presdarenes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Près d'anènes</h3></div> </a> <br>
+<a  class="images" href="PageQuartiers/PresDarenes.php"> <img src="../Images/presdarenes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Près d'anènes</h3></div> </a> <br>
 </td>
 </table>
 <table align=center>
   <td>
-<a  class="images" href="CroixDargent.php"> <img src="../Images/croixdargent.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Croix d'argent</h3></div> </a> <br>
+<a  class="images" href="PageQuartiers/CroixDargent.php"> <img src="../Images/croixdargent.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Croix d'argent</h3></div> </a> <br>
 </td>
 <td>
-<a  class="images" href="Mosson.php"> <img src="../Images/mosson.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Mosson</h3></div> </a> <br>
+<a  class="images" href="PageQuartiers/Mosson.php"> <img src="../Images/mosson.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Mosson</h3></div> </a> <br>
 </td>
 <td>
-<a  class="images" href="Cevennes.php"> <img src="../Images/cevennes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Cevennes</h3></div> </a> <br>
+<a  class="images" href="PageQuartiers/Cevennes.php"> <img src="../Images/cevennes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Cevennes</h3></div> </a> <br>
 </td>
 </table>
 </div>
