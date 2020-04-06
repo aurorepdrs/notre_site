@@ -1,6 +1,5 @@
 html{
-	background-image: url(Images/MontpellierInscription.jpg);
-	font-family: Arial Narrow;
+    background-color: #464545;
 }
 
 h1{
@@ -16,9 +15,10 @@ p{
 	color: grey;
 	text-decoration: underline;
 }
-
+a{color: #EFAA1D}
 h2{
 	margin-left: 90%;
+    color: #EFAA1D;
 }
 
 #connexion{
