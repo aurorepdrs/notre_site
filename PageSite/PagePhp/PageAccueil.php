@@ -4,7 +4,6 @@
 <?php
 session_start();
 $estconnecte=$_SESSION['utilisateurconnecte'];
-echo $estconnecte."<br>";
 ?>
 
 <html>
