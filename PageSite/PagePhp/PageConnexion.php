@@ -6,7 +6,7 @@
 
 	<meta charset="UTF-8">
     <title>Connexion</title>
-	<link rel="stylesheet" href="../inscription.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../inscription.css" type="text/css"  />
 
 </head>
   
