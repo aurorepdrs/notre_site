@@ -4,7 +4,7 @@
 
 
 <head>
-	<link rel="stylesheet" href=".css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../inscription.css" type="text/css" media="screen" />
 	<title>Établissements scolaires</title>
 </head>
 
