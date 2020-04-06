@@ -47,6 +47,8 @@ h2{
     text-decoration:none;
     white-space:nowrap;
 }
+li:hover { background-color:#EFAA1D; 
+}
 
 
 .images{
