@@ -1,37 +1,29 @@
 <!DOCTYPE HTML>
 
-<html>
+<html >
 
 
 <head>
 	 <link rel="stylesheet" href="../accueil.css" type="text/css" />
-	<title>loisirs[]</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Formulaire inscrit</title>
 </head>
 
-<body>
+<body style='background-color: #464545;'>
 
 
 
-
-
-
-
-
-
-
-
-
-
-<div class="box">
-	<div >
-	<h1> loisirs </h1>
+<div class="container">
+<div class="row">
+<div class="col-sm">
+	<h1> Loisirs </h1>
 	<form action="enregistrement_inscrit.php" method="get" autocomplete="off"> 
 	<p>Piscine <input type="checkbox" value="Piscine" name="loisirs[]"> </p>
 	<p>Plateaux Sportifs <input type="checkbox" value="Plateaux_sportifs" name="loisirs[]"> </p>
 	<p>Terrains de jeux <input type="checkbox" value="Terrains_jeux" name="loisirs[]"> </p>
-	<p>Salles de combat <input type="checkbox" value="Salles_de_combat" name="loisirs[]"> </p>
-	<p>Skateparks <input type="checkbox" value="skatepark" name="loisirs[]"> </p>
-	<p>Bowlings <input type="checkbox" value="bowling" name="loisirs[]"> </p>
+	<p>Salles de combat <input type="checkbox" value="Salles_combat" name="loisirs[]"> </p>
+	<p>Skateparks <input type="checkbox" value="Skatepark" name="loisirs[]"> </p>
+	<p>Bowlings <input type="checkbox" value="Bowling" name="loisirs[]"> </p>
 	<p>Salles de remise en forme <input type="checkbox" value="Salles_remise_forme" name="loisirs[]"> </p>
 	<p>Gymnases <input type="checkbox" value="Gymnase" name="loisirs[]"> </p>
 	<p>Port <input type="checkbox" value="Port" name="loisirs[]"> </p>
@@ -44,19 +36,20 @@
 	<p>Terrains de tennis <input type="checkbox" value="Tennis" name="loisirs[]"> </p>
 	<p>Cyclisme <input type="checkbox" value="Cyclisme" name="loisirs[]"> </p>
 	<p>Domaines skiables <input type="checkbox" value="Domaine_skiable" name="loisirs[]"> </p>
-	<p>Centres équestres <input type="checkbox" value="Centres_equestre" name="loisirs[]"> </p>
+	<p>Centres équestres <input type="checkbox" value="Centre_equestre" name="loisirs[]"> </p>
 	<p>Athlétisme <input type="checkbox" value="Athletisme" name="loisirs[]"> </p>
 	<p>Terrains de golf <input type="checkbox" value="Terrain_golf" name="loisirs[]"> </p>
 	<p>Parcours sportifs <input type="checkbox" value="Parcours_sportifs" name="loisirs[]"> </p>	
 	</div>
 	
-	<div>
-	<h1> commerces[] </h1>
+	
+	 <div class="col-sm">
+	<h1> Commerces </h1>
 	
 	<p>Hypermarché <input type="checkbox" value="Hypermarche" name="commerces[]"> </p>
 	<p>Librairie <input type="checkbox" value="Librairie" name="commerces[]"> </p>
-	<p>Magasins de vêtements <input type="checkbox" value="Magasin_de_vetements" name="commerces[]"> </p>
-	<p>Magasins du foyer <input type="checkbox" value="Magasin_du_foyer" name="commerces[]"> </p>
+	<p>Magasins de vêtements <input type="checkbox" value="Magasin_vetements" name="commerces[]"> </p>
+	<p>Magasins du foyer <input type="checkbox" value="Magasin_foyer" name="commerces[]"> </p>
 	<p>Magasins de chaussures <input type="checkbox" value="Magasin_chaussures" name="commerces[]"> </p>
 	<p>Magasins d'électroménager <input type="checkbox" value="Magasin_electromenager" name="commerces[]"> </p>
 	<p>Magasins de meubles <input type="checkbox" value="Magasin_meubles" name="commerces[]"> </p>
@@ -77,11 +70,10 @@
 	<p>Boucherie <input type="checkbox" value="Boucherie" name="commerces[]"> </p>
 	<p>Magasins de surgelés <input type="checkbox" value="Produits_surgeles" name="commerces[]"></p>
 	<p>Poissonnerie <input type="checkbox" value="Poissonnerie" name="commerces[]"></p>
-	<div>
+	</div>
 	
+	 <div class="col-sm">
 	<h1> Établissements scolaires </h1>
-	
-	<div>
 	<p>École maternelle <input type="checkbox" value="Ecole_maternelle" name="etablissementscolaire[]"> </p>
 	<p>École maternelle avec cantine <input type="checkbox" value="Ecole_maternelle_cantine" name="etablissementscolaire[]"> </p>
 	<p>École élémentaire <input type="checkbox" value="Ecole_elementaire" name="etablissementscolaire[]"> </p>
@@ -113,6 +105,7 @@
 	<p>Restaurant universitaire <input type="checkbox" value="Restaurant_universitaire" name="etablissementscolaire[]"> </p>
 	<p><input type="submit" value="SOUMETTRE"></p>
 	</div>
+	
 	</form>
 	</div>
 	
