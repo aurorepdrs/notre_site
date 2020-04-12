@@ -1,6 +1,7 @@
 html{
     background-color: #464545;
 }
+
 #logo{
     width: 20%;
     top:0px;
@@ -11,15 +12,14 @@ iframe{
     border: black 5px;
     margin-left: auto;
     margin-right: auto;
-  width=600px ;
-    height=450px;
+  width:600px ;
+    height:450px;
               }
 .menu{ 
     overflow: hidden;
     display: inline-block;
-    padding-left: `0px;
+    padding-left: 400px;
     margin-top: 20px;
-
 }
 
 .menu li{
