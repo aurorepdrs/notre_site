@@ -8,15 +8,13 @@
 	<title> Contact </title>
       <meta charset="UTF-8">
 	<link rel="stylesheet" href="../accueil.css" type="text/css" media="screen" />
-	<style>
-		h2{
-			margin-left: 90%;
-		
-		}
-	</style>
+	
+	
+
 </head>
 
 <body>
+
 
 <header>
             <h1> <img id="logo" src="../logo.png"></h1>
@@ -42,6 +40,8 @@
 	<li> Nindayou KONATE </li>
 	<li> Aurore PODEROSO </li>
 	<p> Si vous avez besoin de nous contacter, n'hésitez pas à nous contacter sur notre adresse mail: contact@ouhabiter.fr </p>
+	
+
 	
 </body>
 
