@@ -174,7 +174,7 @@ $estconnecte=$_SESSION['utilisateurconnecte'];
 		echo "Vous n'êtes pas connectés";
 	}
 	else{
-		echo "<a href='PageLoisirs.php' >Choisissez vos préférences</a>"."<br>";
+		echo "<a href='formulaireinscrit.php' >Choisissez vos préférences</a>"."<br>";
 		echo "<a href='PageDeconnexion.php' >Se déconnecter</a>"."<br>";
 	}
 ?>
