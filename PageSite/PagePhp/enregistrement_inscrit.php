@@ -35,6 +35,7 @@
 		$sql.= " AND LOISIRS.Type_loisirs like '%$l%'";
 	
 	}
+	
 	}
 
 	if(isset($_GET['commerces'])){
@@ -65,20 +66,13 @@
 		
 	}
 	
-
-	
-	
-	
 			
 		if (!isset($_GET['commerces']) AND !isset($_GET['loisirs']) AND !isset($_GET['etablissementscolaire'])){
 			
 			echo 'VEUILLEZ SELECTIONNER AU MOINS UN CHAMP...';
-			echo"<meta http-equiv='refresh' content='1; URL=formulaireinscrit.php'>";	
+			echo"<meta http-equiv='refresh' content='2; URL=formulaireinscrit.php'>";	
 		}
 		else{
-		
-	
-	
 
 			$sql=$sql1.$sql;
 			$bdd = new PDO('mysql:host=localhost;dbname=COMMERCES', 'root', 'root');
