@@ -6,7 +6,7 @@
 
 	<meta charset="UTF-8">
    <title>Mot de passe oublié</title>
-	<link rel="stylesheet" href="inscription.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../inscription.css" type="text/css" media="screen" />
 
 </head>
 
@@ -16,11 +16,11 @@
 	
 	<div id="mdp"> 
 	<p> Tapez votre adresse mail, nous vous enverrons un mail pour réinitialiser votre mot de passe </p> 
-	<form method="get" action="connecte.php">
+	<form method="get" >
        
   	<p> Adresse mail : <br/>
   	<input type="text" name="Adresse mail" placeholder="Ex: philippe@hotmail.com" /> <br/> </p>
-  	<p> <input type="submit" value="Envoyer"> </p> 
+  	<p> <a href="PageAccueil.php">Envoyer</a> </p> 
   	</div>
 
 </body>
