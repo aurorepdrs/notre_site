@@ -2,11 +2,11 @@
 	<?php
 		session_start();
 	?>
-<html>
+<html class="background-color: #464545">
 	<head>
 		
 		 <link rel="stylesheet" href="../accueil.css" type="text/css" />
-	
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<?php
 	
 	$sql='';
@@ -107,18 +107,7 @@
 				$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$req=$bdd->prepare($sql);
 				$req->execute(array($_GET['etablissementscolaire'],$_GET['loisirs']));
-				echo '<h1>ETABLISSEMENTS SCOLAIRES ET LOISIRS</h1>';
-				while ($donnees = $req->fetch()){
-					 echo $donnees['Q'];
-					 ECHO '       :';
-				 	 echo $donnees['SQN'];
-				 	 ECHO '<br/>';
-				}
-				$req->closeCursor();
-			
-            }
-            
-            
+			} 
             
    		if ($_GET['commerces']!='' AND $_GET['loisirs']!='' AND $_GET['etablissementscolaire']=='' ){
    			$sql=$sql.$sql2;
@@ -126,90 +115,46 @@
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$req=$bdd->prepare($sql);
 			$req->execute(array($_GET['commerces'],$_GET['loisirs']));
-			echo '<h1>COMMERCES ET LOISIRS</h1>';
-			while ($donnees = $req->fetch()){
-			 echo $donnees['Q'];
-					 ECHO '      :';
-				 	echo $donnees['SQN'];
-				 	ECHO '<br/>';
 			}
-			$req->closeCursor();
-                }
-                
               
                 
          if ($_GET['commerces']!='' AND $_GET['etablissementscolaire']!='' AND $_GET['loisirs']==''){ 
            	$sql=$sql.$sql3;
-               $bdd = new PDO('mysql:host=localhost;dbname=COMMERCES', 'root', 'root');
-			
+            $bdd = new PDO('mysql:host=localhost;dbname=COMMERCES', 'root', 'root');
 			$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$req=$bdd->prepare($sql);
 			$req->execute(array($_GET['commerces'],$_GET['etablissementscolaire']));
-			echo '<h1>COMMERCES ET ETABLISSEMENTS SCOLAIRES</h1>';
-			while ($donnees = $req->fetch()){
-			echo $donnees['Q'];
-			echo'      :';
-			 echo $donnees['SQN'];
-			 ECHO '<br/>';
-			}
-			$req->closeCursor();
                 }
 			
 			
-				
 			if ($_GET['commerces']!='' AND $_GET['etablissementscolaire']!='' AND $_GET['loisirs']!='' ){
 				 $sql=$sql.$sql4;
                  $bdd = new PDO('mysql:host=localhost;dbname=COMMERCES', 'root', 'root');
 			 	 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				 $req=$bdd->prepare($sql);
 				 $req->execute(array($_GET['commerces'],$_GET['etablissementscolaire'],$_GET['loisirs']));
-				 echo '<h1>ETABLISSEMENTS SCOLAIRES, COMMERCES ET LOISIRS</h1>';
-				 while ($donnees = $req->fetch()){
-					echo $donnees['Q'];
-					echo'       :';
-			 		echo $donnees['SQN'];
-			 		ECHO '<br/>';
-			}
-			$req->closeCursor();
+				
 				}
                 
-        
-        
                if ($_GET['commerces']!='' AND $_GET['loisirs']=='' AND $_GET['etablissementscolaire']=='' ){
                	 	$sql=$sql.$sql5;
 					$bdd = new PDO('mysql:host=localhost;dbname=COMMERCES', 'root', 'root');
 					$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					$req=$bdd->prepare($sql);
 					$req->execute(array($_GET['commerces']));
-					echo '<h1>COMMERCES</h1>';
-					while ($donnees = $req->fetch()){
-					echo $donnees['Q'];
-					echo'       :';
-				    echo $donnees['SQN'];
-			 		ECHO '<br/>';	
-			}
-			$req->closeCursor();
+					
 				}
-				
 				
 				
 				if ($_GET['loisirs']!='' AND $_GET['etablissementscolaire']=='' AND $_GET['commerces']==''  ){
 					$sql=$sql.$sql6;
 					$bdd = new PDO('mysql:host=localhost;dbname=COMMERCES', 'root', 'root');
-					echo '<h1>LOISIRS</h1>';
 					$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					$req=$bdd->prepare($sql);
 					$req->execute(array($_GET['loisirs']));
-					while ($donnees = $req->fetch()){
-						echo $donnees['Q'];
-						echo'       :';
-						echo $donnees['SQN'];
-						ECHO '<br/>';
-			}
-			$req->closeCursor();
+					
 			}
 			
-				
 					
 				if ( $_GET['etablissementscolaire']!='' AND $_GET['loisirs']=='' AND $_GET['commerces']=='' ){
 					$sql=$sql.$sql7;
@@ -217,30 +162,43 @@
 			
 					$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					$req=$bdd->prepare($sql);
-					$req->execute(array($_GET['etablissementscolaire']));
-					echo '<h1>ETABLISSEMENTS SCOLAIRES</h1>';
-					while ($donnees = $req->fetch()){
-						 echo $donnees['Q'];
-					 	 ECHO '       :';
-				 		 echo $donnees['SQN'];
-				 	 	 ECHO '<br/>';
-			}
-			$req->closeCursor();
-			}               
-			
-			
-			
-			$ok=TRUE;
-			if ($_GET['commerces']=='' AND $_GET['loisirs']=='' AND $_GET['etablissementscolaire']==''){
-				$ok=FALSE;
-				echo 'VEUILLEZ SELECTIONNER AU MOINS UN CHAMP...';
-				echo"<meta http-equiv='refresh' content='1; URL=PageAccueil.php'>";	
+					$req->execute(array($_GET['etablissementscolaire']));		
+			}  
+				$ok=TRUE;
+		if ($_GET['commerces']=='' AND $_GET['loisirs']=='' AND $_GET['etablissementscolaire']==''){
+			$ok=FALSE;
+			echo 'VEUILLEZ SELECTIONNER AU MOINS UN CHAMP...';
+			echo"<meta http-equiv='refresh' content='1; URL=PageAccueil.php'>";	
 }
+		else{
+			echo'';
+		}
+			
+			echo '<h2 class="color: #464545" >VOICI LES SECTEURS QUI VOUS CORRESPONDENT LE PLUS</h2>';
+		
+			echo'<table class="table">';
+  			echo'<thead class="thead-dark">';
+   			 echo'<tr>';
+     		 echo'<th scope="col">QUARTIERS</th>';
+     		 echo'<th scope="col">SOUS QUARTIERS</th>';
+    		echo'</tr>';
+  			echo'</thead>';
+			while ($donnees = $req->fetch()){
+			 	echo'<tbody>';
+ 			  	echo' <tr>';
+    		 	echo' <td>'.$donnees['Q'].'</td>';
+          		 echo' <td>'.$donnees['SQN'].'</td>';
+          		}
+   				 echo'</tr>';
+				echo'</tbody>';
+				echo'</table>';
+	
+			$req->closeCursor();
 			
 		?>
 <title>recuperation </title>
 </head>
-<body>
+<body class="background-color: #464545">
 
 	
 </body>
