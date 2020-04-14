@@ -15,7 +15,11 @@ $estconnecte=$_SESSION['utilisateurconnecte'];
 </head>
   
 <body>
-
+<?php
+	if ($estconnecte==FALSE){
+		echo "Vous n'êtes pas connectés";
+	}
+?>
 	<header>
         <h1> <img id="logo" src="../logo.png"></h1>
     </header>
@@ -133,51 +137,33 @@ $estconnecte=$_SESSION['utilisateurconnecte'];
 	
 	</div>
 
-	<div class='container'>
-	
-	<br>
-	<br>
-	<table align=center>
-	<td>
-	<a class="images" href="PageQuartiers/Centre.php"> <img src="../Images/centre.jpg" width="300px" height="150px"  border="3" style="border-color: black;" ><div class="text"><h3>Centre</h3></div> </a> <br> </td>
-	<td>
-	<a class="images" href="PageQuartiers/HopitauxFaculte.php"> <img src="../Images/hopitauxfacultes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Hopitaux Facultés</h3></div></a> <br>
-	</td>
-	<td>
-	<a  class="images" href="PageQuartiers/PortMarianne.php"> <img src="../Images/portmarianne.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Port Marianne</h3></div></a> <br>
-	</td>
-	<td>
-	<a  class="images" href="PageQuartiers/PresDarenes.php"> <img src="../Images/presdarenes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Près d'anènes</h3></div> </a> <br>
-	</td>
-	</table>
-	<table align=center>
-	<td>
-	<a  class="images" href="PageQuartiers/CroixDargent.php"> <img src="../Images/croixdargent.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Croix d'argent</h3></div> </a> <br>
-	</td>
-	<td>
-	<a  class="images" href="PageQuartiers/Mosson.php"> <img src="../Images/mosson.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Mosson</h3></div> </a> <br>
-	</td>
-	<td>
-	<a  class="images" href="PageQuartiers/Cevennes.php"> <img src="../Images/cevennes.jpg" width="300px" height="150px" border="3" style="border-color: black;" ><div class="text"><h3>Cevennes</h3></div> </a> <br>
-	</td>
-	</table>
-	
-	</div>
 
-
+<?php
+	if ($estconnecte==TRUE){
+		echo "<div class='container'>"."<br>"."<br>";
+		echo "<table align=center>";
+		echo "<td>"."<a class='images' href='PageQuartiers/Centre.php'>"."<img src='../Images/centre.jpg' width='300px' height='150px'  border='3' style='border-color: black;' >"."<div class='text'>"."<h3>Centre</h3>"."</div>"."</a>"."<br>"."</td>";
+		echo "<td>"."<a class='images' href='PageQuartiers/HopitauxFaculte.php'>"." <img src='../Images/hopitauxfacultes.jpg' width='300px' height='150px' border='3' style='border-color: black;' >"."<div class='text'>"."<h3>Hopitaux Facultés</h3>"."</div>"."</a>"." <br>"."</td>";
+		echo "<td>"."<a  class='images' href='PageQuartiers/PortMarianne.php'>"." <img src='../Images/portmarianne.jpg' width='300px' height='150px' border='3' style='border-color: black;' >"."<div class='text'>"."<h3>Port Marianne</h3>"."</div>"."</a>". "<br>".	"</td>";
+		echo "<td>"."<a  class='images' href='PageQuartiers/PresDarenes.php'>"." <img src='../Images/presdarenes.jpg' width='300px' height='150px' border='3' style='border-color: black;' >"."<div class='text'>"."<h3>Près d'arènes</h3>"."</div>"." </a>"." <br>"."</td>";
+		echo "</table>";
+		echo "<table align=center>";
+		echo "<td>"."<a  class='images' href='PageQuartiers/CroixDargent.php'>"." <img src='../Images/croixdargent.jpg' width='300px' height='150px' border='3' style='border-color: black;' >"."<div class='text'>"."<h3>Croix d'argent</h3>"."</div>"." </a> "."<br>"."	</td>";
+		echo "<td>"."<a  class='images' href='PageQuartiers/Mosson.php'>"." <img src='../Images/mosson.jpg' width='300px' height='150px' border='3' style='border-color: black;'>"."<div class='text'>"."<h3>Mosson</h3>"."</div>"." </a> "."<br>"."</td>";
+		echo "<td>"."	<a  class='images' href='PageQuartiers/Cevennes.php'>"." <img src='../Images/cevennes.jpg' width='300px' height='150px' border='3' style='border-color: black;' >"."<div class='text'>"."<h3>Cevennes</h3>"."</div>"." </a>"." <br>".	"</td>";
+		echo "</table>";
+	
+		echo "</div>";
+		
+		echo "<br>"."<br>"."<a href='formulaireinscrit.php' >Choisissez vos préférences</a>"."<br>";
+		echo "<a href='PageDeconnexion.php' >Se déconnecter</a>"."<br>";
+	}
+?>
+	
 	<div id="carteaccueil">
 	<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46221.28181651607!2d3.8391420883842122!3d43.61007875192444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756742894e802!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1584966116617!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="padding-left: 500px; padding-top:100px;"   aria-hidden="false" tabindex="0"></iframe>
 	</div>
 
-<?php
-	if ($estconnecte==FALSE){
-		echo "Vous n'êtes pas connectés";
-	}
-	else{
-		echo "<a href='formulaireinscrit.php' >Choisissez vos préférences</a>"."<br>";
-		echo "<a href='PageDeconnexion.php' >Se déconnecter</a>"."<br>";
-	}
-?>
 
 	<p id="bas">Site Francais <img  width="20" src="../drapeau.png"/> </p>
 </body>
