@@ -25,6 +25,7 @@
            
             <ul class="menu">
                 <li ><a href="PageAccueil.php" class="homeIcon">Accueil</a></li>
+                <li ><a href="stats.php">Statistiques</a></li>
                 <li ><a href="PageInscription.php">S'inscrire</a></li>
                 <li ><a href="PageConnexion.php">Se connecter</a></li>
                 <li ><a href="PageContact.php">Contact</a></li>
